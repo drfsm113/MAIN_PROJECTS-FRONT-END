@@ -1,0 +1,67 @@
+graph TD
+    %% Admin Side
+    A[Admin Login] --> B[Admin Dashboard]
+    B --> C[Product Management]
+    B --> D[Order Management]
+    B --> E[Inventory Management]
+    B --> F[Customer Management]
+    B --> G[Analytics & Reporting]
+    B --> H[System Settings]
+
+    C --> C1[Add/Edit Products]
+    C --> C2[Manage Categories]
+    C --> C3[Set Pricing & Discounts]
+
+    D --> D1[View Orders]
+    D --> D2[Process Orders]
+    D --> D3[Manage Returns]
+
+    E --> E1[Update Stock]
+    E --> E2[Set Alerts]
+    E --> E3[Supplier Management]
+
+    F --> F1[View Customers]
+    F --> F2[Manage Accounts]
+    F --> F3[Support Tickets]
+
+    G --> G1[Sales Reports]
+    G --> G2[Customer Insights]
+    G --> G3[Inventory Reports]
+
+    H --> H1[Payment Settings]
+    H --> H2[Shipping Config]
+    H --> H3[User Roles]
+
+    %% Client Side
+    I[Customer Visits Site] --> J[Browse Products]
+    J --> K[Search]
+    J --> L[Category Navigation]
+    K --> M[Product Page]
+    L --> M
+    M --> N[Add to Cart]
+    M --> O[Read Reviews]
+    N --> P[View Cart]
+    P --> Q[Update Cart]
+    P --> R[Proceed to Checkout]
+    R --> S[Login/Register]
+    S --> T[Enter Shipping Info]
+    T --> U[Choose Shipping Method]
+    U --> V[Enter Payment]
+    V --> W[Place Order]
+    W --> X[Order Confirmation]
+    X --> Y[Track Order]
+    Y --> Z[Receive Product]
+    Z --> AA[Leave Review]
+
+    %% Connections between Admin and Client sides
+    C1 -.-> J
+    D2 -.-> Y
+    E1 -.-> N
+    F3 -.-> AA
+    W -.-> D1
+
+    %% Styling
+    classDef adminNode fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef clientNode fill:#bfe,stroke:#333,stroke-width:2px;
+    class A,B,C,D,E,F,G,H,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3,G1,G2,G3,H1,H2,H3 adminNode;
+    class I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,AA clientNode;

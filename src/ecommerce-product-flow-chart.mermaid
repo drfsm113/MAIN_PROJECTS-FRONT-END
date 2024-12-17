@@ -1,0 +1,23 @@
+graph TD
+    A[Start] --> B[Create Product]
+    B --> C[Add Product Details]
+    C --> D[Set Price]
+    C --> E[Assign Categories]
+    C --> F[Add Tags]
+    C --> G[Upload Images]
+    D & E & F & G --> H[Create Product Variants]
+    H --> I[Set Inventory Levels]
+    I --> J[Publish Product]
+    J --> K{Is Product Digital?}
+    K -->|Yes| L[Upload Digital File]
+    K -->|No| M[Set Shipping Options]
+    L & M --> N[Product Live in Catalog]
+    N --> O[Customer Browses Catalog]
+    O --> P[Customer Views Product]
+    P --> Q[Add to Cart]
+    Q --> R[Checkout Process]
+    R --> S[Order Placed]
+    S --> T{Is Product Digital?}
+    T -->|Yes| U[Provide Download Link]
+    T -->|No| V[Process for Shipping]
+    U & V --> W[End]

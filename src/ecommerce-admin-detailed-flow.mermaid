@@ -1,0 +1,72 @@
+graph TD
+    A[Admin Logs In] --> B[Dashboard Overview]
+    
+    B --> C[Product Management]
+    B --> D[Order Management]
+    B --> E[Inventory Management]
+    B --> F[Customer Management]
+    B --> G[Marketing & Promotions]
+    B --> H[Analytics & Reporting]
+    B --> I[System Settings]
+
+    C --> C1[Add New Product]
+    C --> C2[Edit Existing Product]
+    C --> C3[Manage Categories]
+    C --> C4[Manage Brands]
+    C --> C5[Bulk Product Import/Export]
+    C --> C6[Manage Product Attributes]
+    C --> C7[Set Product Visibility]
+
+    C1 --> C1a[Enter Basic Info]
+    C1 --> C1b[Set Pricing]
+    C1 --> C1c[Add Images]
+    C1 --> C1d[Configure Variants]
+    C1 --> C1e[Set SEO Parameters]
+
+    D --> D1[View All Orders]
+    D --> D2[Process New Orders]
+    D --> D3[Manage Order Statuses]
+    D --> D4[Handle Returns/Refunds]
+    D --> D5[Generate Invoices]
+    D --> D6[Manage Shipping]
+
+    D2 --> D2a[Verify Order Details]
+    D2 --> D2b[Process Payment]
+    D2 --> D2c[Prepare for Shipping]
+    D2 --> D2d[Generate Shipping Label]
+
+    E --> E1[View Current Stock]
+    E --> E2[Update Inventory Levels]
+    E --> E3[Set Low Stock Alerts]
+    E --> E4[Manage Suppliers]
+    E --> E5[Create Purchase Orders]
+    E --> E6[Receive Inventory]
+
+    F --> F1[View Customer List]
+    F --> F2[Manage Customer Accounts]
+    F --> F3[View Customer Order History]
+    F --> F4[Handle Customer Support Tickets]
+    F --> F5[Manage Customer Groups]
+
+    G --> G1[Create Discount Codes]
+    G --> G2[Set Up Sales/Promotions]
+    G --> G3[Manage Email Campaigns]
+    G --> G4[Configure Upsells/Cross-sells]
+    G --> G5[Manage Affiliate Programs]
+
+    H --> H1[View Sales Reports]
+    H --> H2[Analyze Customer Behavior]
+    H --> H3[Track Inventory Turnover]
+    H --> H4[Monitor Website Traffic]
+    H --> H5[Generate Custom Reports]
+
+    I --> I1[Configure Payment Gateways]
+    I --> I2[Manage User Roles & Permissions]
+    I --> I3[Set Tax Rules]
+    I --> I4[Configure Shipping Methods]
+    I --> I5[Customize Store Design]
+    I --> I6[Manage Integrations]
+    I --> I7[System Backup & Maintenance]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px

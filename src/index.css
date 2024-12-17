@@ -1,0 +1,47 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/**/
+/*===============color palate===*/
+/*!* Custom Theme Variables *!*/
+:root {
+  --primary-color: #C5A880; /* Gold */
+  --primary-light: #E8D3B2; /* Light Gold */
+  --primary-dark: #7E5D3B; /* Dark Gold */
+
+  --secondary-color: #2B2B2B; /* Deep Black */
+  --secondary-light: #4A4A4A; /* Dark Gray */
+  --secondary-dark: #1A1A1A; /* Almost Black */
+
+  --accent-color: #F7ECE1; /* Champagne */
+  --accent-light: #FAF4EF; /* Ivory */
+  --accent-dark: #DBC0A1; /* Sandstone */
+
+  --background-color: #F8F5F2; /* Soft Ivory */
+  --background-dark: #E5DED8; /* Warm Gray */
+
+  --text-color: #2B2B2B; /* Deep Black */
+  --text-light: #5E5E5E; /* Medium Gray */
+  --text-muted: #8B8B8B; /* Muted Gray */
+
+  --success-color: #28a745; /* Green */
+  --warning-color: #ffc107; /* Yellow */
+  --error-color: #dc3545; /* Red */
+
+  --border-color: #D4D4D4; /* Soft Border Gray */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+
+  --font-family-sans: 'Lora', serif;
+  --font-family-serif: 'Playfair Display', serif;
+  --font-family-mono: 'Roboto Mono', monospace;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/*carsoule*/
+
